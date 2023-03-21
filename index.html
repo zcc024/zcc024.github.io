@@ -74,24 +74,12 @@
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/03/21/%E5%9C%A8github%E9%83%A8%E7%BD%B2hexo%E5%8D%9A%E5%AE%A2_zsn/">部署Hexo_zsn</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
         <H3>山东大学  计算机科学与技术  学院
 
-<H4>  云计算技术  课程 
-
-
-
+<pre><code>                            &lt;H4&gt;  云计算技术  课程 
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -121,68 +109,10 @@
 <td><strong>硬件环境：</strong><br />一台联网计算机<br /><strong>软件环境：</strong><br />Windows or Linux</td>
 </tr>
 <tr>
-<td><strong>实验内容和步骤：</strong><br />1. 登录个人github账号，创建新的仓库。     仓库名为usrname.github.io，这样才能在部署到github page时被识别。  此处为zcc024.github.io。<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321200800101.png" alt="image-20230321200800101"><br />2.由于已经配置过node.js,因此只安装git;<br /><br /><img src="file:///C:/Users/24153/AppData/Local/Microsoft/Windows/Clipboard/HistoryData/%7BB4B667E7-B162-4909-BF9E-018D48079908%7D/%7B947D77D2-F7F1-4682-8DCE-DD3841DF3EC6%7D/ResourceMap/%7BDA445F9B-45B5-4E46-91A1-948D6ED9654D%7D" alt="img"><br /><br />node版本：<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321195911909.png" alt="image-20230321195911909"><br /><br />3.添加镜像源，可以使用国内镜像源加速。<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321200050808.png" alt="image-20230321200050808"><br />4.安装hero。<br />创建博客文件夹，用git控制台安装hexo。<br /><img src="D:\照片\1.jpg"><br />初始化HEXO：<br /><img src="D:\照片\2.png"><br />此时文件夹里有：<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321200736295.png" alt="image-20230321200736295"><br />node_modules文件夹下是一些依赖包；public存放生成的页面；scaffolds中是生成文章模板；source用来存放文章；theme中是主题；_config.yml是博客配置文件。<br />hexo g hexo s在本地运行。<br /><br />5.生成SSH加到github，此处创建SSH时发现我没有SSH文件夹，故自己创建。要输入的内容为：<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321201029097.png" alt="image-20230321201029097"><br /><img src="D:\照片\4.jpg"><br />6.1. 在github个人主页的设置中找到SSH and GPG keys,新建SSH，将id_rsa.pub中的内容复制进来。<br />创建好的Key:<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321201158261.png" alt="image-20230321201158261"><br />创建文章，已经可以在本地查看。<br /><img src="D:\照片\3.png"><br />8.将hexo生成的文章部署到github上，修改_config.yml文件修改最后一行配置。仓库改为了刚刚创建的：<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321201339664.png" alt="image-20230321201339664"><br />由于后续报错，更改为：<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321201417983.png" alt="image-20230321201417983"><br />输入三条命令：<br />清理之前的生成，生成文章，部署到github。<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321201504563.png" alt="image-20230321201504563"><br />可以简写为 hexo g、hexo d。<br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321201628779.png" alt="image-20230321201628779"><br /><img src="C:\Users\24153\AppData\Roaming\Typora\typora-user-images\image-20230321201640057.png" alt="image-20230321201640057"><br />9.此时可以使用HTTP链接查看博客。<br /><img src="D:\照片\5.png"><br /></td>
+<td><strong>实验内容和步骤：</strong><br />1. 登录个人github账号，创建新的仓库。     仓库名为usrname.github.io，这样才能在部署到github page时被识别。  此处为zcc024.github.io。<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125207_1.png" alt="image-20230321200800101"><br />2.由于已经配置过node.js,因此只安装git;<br /><br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125218_3.png" alt="img"><br /><br />node版本：<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125218_3.png" alt="image-20230321195911909"><br /><br />3.添加镜像源，可以使用国内镜像源加速。<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125224_4.jpg" alt="image-20230321200050808"><br />4.安装hero。<br />创建博客文件夹，用git控制台安装hexo。<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125229_5.jpg"><br />初始化HEXO：<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125234_6.jpg"><br />此时文件夹里有：<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125242_7.png" alt="image-20230321200736295"><br />node_modules文件夹下是一些依赖包；public存放生成的页面；scaffolds中是生成文章模板；source用来存放文章；theme中是主题；_config.yml是博客配置文件。<br />hexo g hexo s在本地运行。<br /><br />5.生成SSH加到github，此处创建SSH时发现我没有SSH文件夹，故自己创建。要输入的内容为：<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125248_8.png" alt="image-20230321201029097"><br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125303_9.jpg"><br />6.1. 在github个人主页的设置中找到SSH and GPG keys,新建SSH，将id_rsa.pub中的内容复制进来。<br />创建好的Key:<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125307_10.jpg" alt="image-20230321201158261"><br />创建文章，已经可以在本地查看。<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125313_11.png"><br />8.将hexo生成的文章部署到github上，修改_config.yml文件修改最后一行配置。仓库改为了刚刚创建的：<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125317_12.png" alt="image-20230321201339664"><br />由于后续报错，更改为：<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125321_13.png" alt="image-20230321201417983"><br />输入三条命令：<br />清理之前的生成，生成文章，部署到github。<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125325_14.png" alt="image-20230321201504563"><br />可以简写为 hexo g、hexo d。<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125333_15.jpg" alt="image-20230321201628779"><br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125339_16.jpg" alt="image-20230321201640057"><br />9.此时可以使用HTTP链接查看博客。<br /><img src="https://images.cnblogs.com/cnblogs_com/refun/2290313/o_230321125347_17.png"><br /></td>
 </tr>
 <tr>
 <td><strong>结论分析与体会：</strong>  <br />1. 对git工具的使用更加熟练了；  2. 对于hexo博客搭建有初步了解，可以通过GitHub管理个人博客；  3. 后续还可以购买域名进一步管理自己的博客。</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>学号：202000130229</th>
-<th>姓名： 周圣宁</th>
-<th>班级： 计科20.1</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>实验题目：利用云平台搭建个人博客</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>实验学时：2</td>
-<td>实验日期：2023.3.14</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>实验目的：熟悉个人博客系统的搭建。  具体包括：  参考方案：注册Github账号，搭建Hexo环境并实现个人博客搭建，撰写实验报告。</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>硬件环境：   联网的计算机一台</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>软件环境：  Windows or Linux</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>实验步骤与内容：  1. 登录个人github账号，创建新的仓库。     仓库名为usrname.github.io，这样才能在部署到github page时被识别。  此处为zcc024.github.io。</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>结论分析与体会：  1. 对git工具的使用更加熟练了；  2. 对于hexo博客搭建有初步了解，可以通过GitHub管理个人博客；  3. 后续还可以购买域名进一步管理自己的博客。</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </tbody></table>
 
@@ -315,7 +245,7 @@
       <ul>
         
           <li>
-            <a href="/2023/03/21/%E5%9C%A8github%E9%83%A8%E7%BD%B2hexo%E5%8D%9A%E5%AE%A2_zsn/">部署Hexo_zsn</a>
+            <a href="/2023/03/21/%E5%9C%A8github%E9%83%A8%E7%BD%B2hexo%E5%8D%9A%E5%AE%A2_zsn/">(no title)</a>
           </li>
         
           <li>
